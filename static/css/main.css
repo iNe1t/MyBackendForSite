@@ -10,10 +10,11 @@ header {
     top: 0px;
     display: flex;
     flex-direction: column;
+    background-color: crimson;
+    margin: 0;
 }
 p {
     font-weight: bolder;
-    background-color: crimson;
 }
 footer {
     position: absolute;
