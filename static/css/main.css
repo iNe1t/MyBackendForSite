@@ -13,3 +13,7 @@ p {
     font-weight: bolder;
     background-color: crimson;
 }
+footer {
+    position: absolute;
+    top: 100%;
+}
