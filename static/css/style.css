@@ -1,3 +1,5 @@
 .header {
-    background: linear-gradient(aqua, );
+    background: linear-gradient(#00ebff,#8ff6ff );
+    width: 100vw;
+    height: 10vh;
 }
