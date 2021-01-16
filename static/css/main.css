@@ -8,6 +8,8 @@ header {
     border: 5px solid green;
     position: fixed;
     top: 0px;
+    display: flex;
+    flex-direction: column;
 }
 p {
     font-weight: bolder;

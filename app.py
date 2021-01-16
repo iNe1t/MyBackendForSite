@@ -11,5 +11,9 @@ def index():
 def function():
     return render_template("data.html")
 
+@app.route("/vova")
+def function2():
+    return "Vovaaaaaaaaaa"
+
 if __name__ == "__main__":
     app.run(debug=True)
