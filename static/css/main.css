@@ -19,4 +19,6 @@ p {
 footer {
     position: absolute;
     top: 100%;
+    background-color: darkgreen;
+    width: 100vw;
 }
