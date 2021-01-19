@@ -3,7 +3,6 @@
 body{
     margin: 0px;
 }
-
 .for-header {
     background: linear-gradient(#7842f5, #bb6afc);
     height: 70px;
@@ -53,8 +52,6 @@ body{
 main {
     display: flex;
     height: 2000px;
-    align-items: center;
-    flex-grow: 1;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
@@ -99,4 +96,5 @@ footer{
     font-family: 'Open Sans', sans-serif;
     color: grey;
     font-size: 45px;
+    margin: 5px;
 }
