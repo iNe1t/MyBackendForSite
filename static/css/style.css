@@ -93,4 +93,5 @@ footer{
     visibility: hidden;
     position: fixed;
     top: 70px;
+    animation: 1s ease-out infinite normal;
 }
