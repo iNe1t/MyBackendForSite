@@ -37,7 +37,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .name {
-    background-image: {{url(download.png)}};
+    background-image: url(download.png);
     background-repeat: repeat;
     width: 100%;
     height: 500px;
