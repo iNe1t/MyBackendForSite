@@ -55,7 +55,7 @@ main {
     height: 2000px;
     align-items: center;
     flex-grow: 1;
-    flex-direction: row-reverse;
+    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
 }
@@ -94,4 +94,9 @@ footer{
     position: fixed;
     top: 70px;
     animation: all 5s ease-out infinite normal;
+}
+.abouthead {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    font-size: 45px;
 }
