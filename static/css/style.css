@@ -48,6 +48,7 @@ body{
     color: white;
     align-items: center;
     flex-direction: column;
+    
 }
 main {
     display: flex;
