@@ -1,3 +1,95 @@
-body {
-    background: linear-gradient(red, orange, yellow, green, cyan,blue, purple);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+body{
+    margin: 0px;
+}
+
+.for-header {
+    background: linear-gradient(#7842f5, #bb6afc);
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+.for-header h1 {
+    margin-left:25px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.ul-header {
+    padding-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.name {
+    background-image: {{url(download.png)}};
+    background-repeat: repeat;
+    width: 100%;
+    height: 500px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    height: 2000px;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+aside {
+    background-color: rgba(196, 196, 196, 0.5);
+    width: 20%;
+    height: 1700px;
+    order: -1;
+    margin-right: 25px;
+}
+.name h1 {
+    font-size: 110px;
+}
+.name p {
+    text-align: center;
+    margin-bottom: 100px;
+}
+footer{
+    background: linear-gradient(#bb6afc,#7842f5);
+    height: 100px;
+}
+.sidemenu{
+    visibility: hidden;
+    background-color: rgba(0,0, 0, 0.4);
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
+    top: 70px;
+    position: fixed;
+}
+.sidebar{
+    background: linear-gradient(#bb6afc,#7842f5);
+    height: 100%;
+    width: 25vw;
+    visibility: hidden;
+    position: fixed;
+    top: 70px;
 }
