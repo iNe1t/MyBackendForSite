@@ -9,6 +9,7 @@ $("#button").click(function(){
     } else if (clicks ===2) {
         $("#menu").css("visibility", "hidden"),
         $("#menu1").css("visibility", "hidden")
+        $("body").css("overflow-y", "visible")
         clicks = 0; 
     }
 });
