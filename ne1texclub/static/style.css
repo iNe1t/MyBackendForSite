@@ -51,13 +51,18 @@ body{
 }
 main {
     display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: row-reverse;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
+    min-height: 1000px;
+
 }
 aside {
     background-color: rgba(196, 196, 196, 0.5);
-    width: 20%;
-    height: 1700px;
+    width: 50%;
+    height: 120vh;
     order: -1;
     margin-right: 25px;
 }
@@ -88,4 +93,18 @@ footer{
     visibility: hidden;
     position: fixed;
     top: 70px;
+}
+.about_block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: -200px;
+}
+.about_h2{
+    color: gray;
+    font-size: 60px;
+}
+.about_block p{
+    font-size: 25px;
 }
