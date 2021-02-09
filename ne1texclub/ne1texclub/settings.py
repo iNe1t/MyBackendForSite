@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'some_app',
-    'article_maker'
+    'article_maker',
+    'authen'
 ]
 
 MIDDLEWARE = [
