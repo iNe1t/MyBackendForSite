@@ -30,11 +30,12 @@ body{
     font-weight: bold;
 }
 .ul-header {
-    padding-right: 50px;
+    padding:21px;
     font-size: 20px;
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 .name {
     background-image: url(download.png);
@@ -51,18 +52,17 @@ body{
 }
 main {
     display: flex;
+    height: 2000px;
     align-items: center;
     flex-grow: 1;
     flex-direction: row-reverse;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
-    min-height: 1000px;
-
 }
 aside {
     background-color: rgba(196, 196, 196, 0.5);
-    width: 50%;
-    height: 120vh;
+    width: 20%;
+    height: 1700px;
     order: -1;
     margin-right: 25px;
 }
@@ -93,18 +93,50 @@ footer{
     visibility: hidden;
     position: fixed;
     top: 70px;
+    display: flex;
+    flex-direction: column;
 }
-.about_block {
+.auth_page_back {
+    background-image: url(download.png);
+    background-repeat: repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 25px;
-    margin-top: -200px;
+    justify-content: center;
 }
-.about_h2{
-    color: gray;
-    font-size: 60px;
+.sidebar-buttons {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 94,5%;
+    padding: 10px;
+    margin: 5px;
 }
-.about_block p{
+.sidebar-buttons:hover, .ul-header:hover{
+    background-color: #7842f5;
+}
+.input_form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.inputer {
     font-size: 25px;
+}
+.login {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.login_button {
+    margin: 20px 50px 20px 50px;
+    background: linear-gradient(#bb6afc,#7842f5);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.main_block {
+    width: 75vw ;
+    height: 100%;
 }
