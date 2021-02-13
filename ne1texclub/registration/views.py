@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import LoginForm, UserRegistrationForm
+from .forms import  UserRegistrationForm
 
 def register(request):
     if request.method == 'POST':
@@ -11,7 +11,7 @@ def register(request):
             new_user.set_password(user_form.cleaned_data['password'])
             # Save the User object
             new_user.save()
-            return render(request, 'account/register_done.html', {'new_user': new_user})
+            return render(request, '', {'new_user': new_user})
     else:
         user_form = UserRegistrationForm()
     return render(request, 'some_app/register.html', {'user_form': user_form})

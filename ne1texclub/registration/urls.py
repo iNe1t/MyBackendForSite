@@ -21,5 +21,5 @@ from . import views
 
 
 urlpatterns = [
-    url('', views.Auth_Page),
+    url('', views.register),
 ]
