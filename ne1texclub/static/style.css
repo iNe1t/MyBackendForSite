@@ -120,7 +120,6 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex-wrap: wrap;
 }
 .inputer {
     font-size: 25px;
@@ -145,4 +144,21 @@ footer{
 .about_h2 {
     font-size: 30px;
     color: gray;
+}
+.reg_success {
+    color: white;
+    background-image: url(download.png);
+    background-repeat: repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+.purple_button {
+    color: white;
+    background: linear-gradient(#bb6afc,#7842f5);
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
 }

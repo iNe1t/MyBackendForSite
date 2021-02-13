@@ -24,15 +24,10 @@
                 <a href="/start" class="sidebar-buttons">Home</a>
         </div>
     </div>
-    <main class="auth_page_back">
-        <div class="input_form">
-            <form class="input_form" method="post" action=".">
-                <h1 id="button" class="link">REGISTER</h1>
-                {{ user_form.as_p }} 
-                {% csrf_token %}
-                <input class="login_button" size="10" type="submit" value="REGISTER">
-            </form>
-        </div>
+    <main class="reg_success">
+        <h1>Welcome {{ new_user.first_name }}!</h1>
+        <p>Your account has been successfully created. Now you can <a href="/log_in">log in</a>.</p>
+        <a class="purple_button" href="/home">HOME</a>
     </main>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
