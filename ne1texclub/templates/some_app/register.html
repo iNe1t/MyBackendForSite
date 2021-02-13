@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>Authentification</title>
+    <title>Register</title>
 </head>
 <body>
     <header class="for-header">
         <h1 id="button" class="link">N</h1>
-        <a href="auth.html" class="ul-header">Log In</a>
+        <div>
+            <a href="/log_in" class="ul-header">Log In</a>
+            <a href="/register" class="ul-header">Register</a>
+        </div>
     </header>
     <div id="menu" class="sidemenu">
         <div id="menu1" class="sidebar">
@@ -23,9 +26,9 @@
     </div>
     <main class="auth_page_back">
         <div class="input_form">
-            <form class="input_form" method="post" action="."></form>
+            <form class="input_form" method="post" action=".">
                 <h1 id="button" class="link">REGISTER</h1>
-                {{ user_form.as_p }}
+                {{ user_form.as_p }} 
                 {% csrf_token %}
                 <input class="login_button" size="10" type="submit" value="REGISTER">
             </form>
