@@ -52,10 +52,8 @@ body{
 }
 main {
     display: flex;
-    height: 2000px;
+    height: 100vh;
     align-items: center;
-    flex-grow: 1;
-    flex-direction: row-reverse;
     font-family: 'Open Sans', sans-serif;
     background-color: white;
 }
