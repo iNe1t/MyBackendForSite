@@ -50,15 +50,6 @@ body{
     align-items: center;
     flex-direction: column;
 }
-main {
-    display: flex;
-    height: 2000px;
-    align-items: center;
-    flex-grow: 1;
-    flex-direction: row-reverse;
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-}
 aside {
     background-color: rgba(196, 196, 196, 0.5);
     width: 20%;
@@ -161,4 +152,14 @@ footer{
     text-align: center;
     padding: 5px;
     font-size: 25px;
+}
+.artic-header {
+    color: gray;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+.artic-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
 }
