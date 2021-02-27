@@ -20,8 +20,7 @@ from django.conf.urls import url
 urlpatterns = [
     path('', include('some_app.urls')),
     path('admin/', admin.site.urls),
-    path('article_maker/', include('article_maker.urls')),
+    path('articles/', include('article_maker.urls')),
     path('log_in/', include('authen.urls')),
     path('register/', include('registration.urls')),
-    path('articles/', include('article_page_generator.urls'))
 ]

@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'article_maker',
     'authen',
     'registration',
-    'article_page_generator'
 ]
 
 MIDDLEWARE = [
