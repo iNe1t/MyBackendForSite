@@ -37,41 +37,12 @@ body{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-.name {
-    background-image: url(download.png);
-    background-repeat: repeat;
-    width: 100%;
-    height: 500px;
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    align-items: center;
-    flex-direction: column;
-}
-main {
-    display: flex;
-    height: 2000px;
-    align-items: center;
-    flex-grow: 1;
-    flex-direction: row-reverse;
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-}
 aside {
     background-color: rgba(196, 196, 196, 0.5);
     width: 20%;
     height: 1700px;
     order: -1;
     margin-right: 25px;
-}
-.name h1 {
-    font-size: 110px;
-}
-.name p {
-    text-align: center;
-    margin-bottom: 100px;
 }
 footer{
     background: linear-gradient(#bb6afc,#7842f5);
@@ -95,14 +66,6 @@ footer{
     top: 70px;
     display: flex;
     flex-direction: column;
-}
-.auth_page_back {
-    background-image: url(download.png);
-    background-repeat: repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .sidebar-buttons {
     font-size: 20px;
@@ -136,25 +99,6 @@ footer{
     color: white;
     font-size: 20px;
 }
-.main_block {
-    width: 75vw ;
-    height: 100%;
-    padding: 20px 0px 20px 0px;
-}
-.about_h2 {
-    font-size: 30px;
-    color: gray;
-}
-.reg_success {
-    color: white;
-    background-image: url(download.png);
-    background-repeat: repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 25px;
-}
 .purple_button {
     color: white;
     background: linear-gradient(#bb6afc,#7842f5);
@@ -162,17 +106,8 @@ footer{
     padding: 5px;
     font-size: 25px;
 }
-.artic-header {
-    color: gray;
-    font-size: 35px;
-    font-family: 'Open Sans', sans-serif;
-}
-.artic-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-main {
+.post_page {
+    margin-top: 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
