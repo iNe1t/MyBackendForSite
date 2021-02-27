@@ -26,7 +26,15 @@
         </div>
     </div>
     <main class="post_page">
-        <h1>Статейки ыыыы</h1>
+        <h1 class="article-h1">Статейки / Проекты</h1>
+        <div class="articles_container">
+            {% for post in posts %}
+            <article>
+                <h3><a href="http://127.00.00.1:8000/post/{{post.id}}">{{post.title}}</a></h3>
+            </article>
+            <hr>
+            {% endfor %}
+        </div>
     </main>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

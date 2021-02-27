@@ -92,3 +92,13 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+.article-h1, .post_title {
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-size: 50px;
+}
+.articles_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
