@@ -78,26 +78,6 @@ footer{
 .sidebar-buttons:hover, .ul-header:hover{
     background-color: #7842f5;
 }
-.input_form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.inputer {
-    font-size: 25px;
-}
-.login {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 20px;
-}
-.login_button {
-    margin: 20px 50px 20px 50px;
-    background: linear-gradient(#bb6afc,#7842f5);
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 20px;
-}
 .purple_button {
     color: white;
     background: linear-gradient(#bb6afc,#7842f5);
