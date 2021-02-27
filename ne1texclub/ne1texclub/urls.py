@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
+from article_maker import views
 
 urlpatterns = [
     path('', include('some_app.urls')),
@@ -23,4 +24,5 @@ urlpatterns = [
     path('articles/', include('article_maker.urls')),
     path('log_in/', include('authen.urls')),
     path('register/', include('registration.urls')),
+    path('post/<int:post_id>', views.post_page),
 ]
