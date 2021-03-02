@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'poststyle.css' %}">
+    <link rel="stylesheet" href="{% static 'for_posts_style.css' %}">
     <title>Posts</title>
 </head>
 <body>
@@ -29,8 +29,12 @@
         <h1 class="article-h1">Статейки / Проекты</h1>
         <div class="articles_container">
             {% for post in posts %}
-            <article>
-                <h3><a href="http://127.00.00.1:8000/post/{{post.id}}">{{post.title}}</a></h3>
+            <article class="post_container">
+                <div class="for_text">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.Short_text }}</p>
+                </div>
+                
             </article>
             <hr>
             {% endfor %}
