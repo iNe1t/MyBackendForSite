@@ -104,7 +104,7 @@ footer{
     border: 2px solid gray;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .post_container h3 {
