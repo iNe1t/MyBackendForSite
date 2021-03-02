@@ -17,7 +17,6 @@
     </header>
     <div id="menu" class="sidemenu">
         <div id="menu1" class="sidebar">
-                <a href="" class="sidebar-buttons">About</a>
                 <a href="" class="sidebar-buttons">Streams</a>
                 <a href="" class="sidebar-buttons">Youtube</a>
                 <a href="" class="sidebar-buttons">Games</a>
@@ -26,7 +25,11 @@
         </div>
     </div>
     <main class="reg_success">
-        <h1>Welcome!</h1>
+        <h1>Welcome! {% if user.is_authenticated %}
+                {{ user.username }}
+            {% else %}
+                <p>    </p>
+            {% endif %} </h1>
         <a class="purple_button" href="/">HOME</a>
     </main>
     <footer></footer>

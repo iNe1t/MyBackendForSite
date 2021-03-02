@@ -11,13 +11,17 @@
     <header class="for-header">
         <h1 id="button" class="link">N</h1>
         <div>
+            {% if user.is_authenticated %}
+                    <a href="#" class="ul-header">{{ user.username }}</a>
+            {% else %}
+                    <a href="#" class="ul-header"></a>
+            {% endif %} 
             <a href="/log_in" class="ul-header">Log In</a>
-            <a href="/register" class="ul-header">Register</a>
+            <a href="/register" class="ul-header">Register</a>  
         </div>
     </header>
     <div id="menu" class="sidemenu">
         <div id="menu1" class="sidebar">
-                <a href="" class="sidebar-buttons">About</a>
                 <a href="" class="sidebar-buttons">Streams</a>
                 <a href="" class="sidebar-buttons">Youtube</a>
                 <a href="" class="sidebar-buttons">Games</a>
