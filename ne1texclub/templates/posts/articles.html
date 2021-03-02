@@ -30,11 +30,14 @@
         <div class="articles_container">
             {% for post in posts %}
             <article class="post_container">
+                <div class="for-pic">
+                    <img src="{{post.img_for_post.url}}" alt="">
+                </div>
                 <div class="for_text">
                     <h3>{{ post.title }}</h3>
                     <p>{{ post.Short_text }}</p>
+                    <a href="" class="justbutton">Читать</a>
                 </div>
-                
             </article>
             <hr>
             {% endfor %}

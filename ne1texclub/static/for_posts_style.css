@@ -78,13 +78,7 @@ footer{
 .sidebar-buttons:hover, .ul-header:hover{
     background-color: #7842f5;
 }
-.purple_button {
-    color: white;
-    background: linear-gradient(#bb6afc,#7842f5);
-    text-align: center;
-    padding: 5px;
-    font-size: 25px;
-}
+
 .post_page {
     margin-top: 80px;
     height: 100vh;
@@ -105,15 +99,32 @@ footer{
 .post_container {
     box-shadow: 16px 15px 10px rgba(0,0,0,0.5);
     height: 30vh;
-    width: 60vw ;
+    width: 55vw ;
     font-family: 'Open Sans', sans-serif;
     border: 2px solid gray;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .post_container h3 {
     font-size: 25px;
 }
 .for_text {
     padding: 25px;
+}
+.for-pic img {
+    height: 12vw;
+    width: 12vw;
+    padding: 15px;
+}
+.justbutton {
+    color: white;
+    background: linear-gradient(#bb6afc,#7842f5);
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
