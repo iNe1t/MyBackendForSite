@@ -43,9 +43,13 @@ aside {
     order: -1;
     margin-right: 25px;
 }
-footer{
+.footer{
     background: linear-gradient(#bb6afc,#7842f5);
     height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .sidemenu{
     visibility: hidden;
@@ -81,10 +85,11 @@ footer{
 
 .post_page {
     margin-top: 80px;
-    height: 100vh;
+    height: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
 }
 .article-h1, .post_title {
     font-family: 'Open Sans', sans-serif;
@@ -95,6 +100,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 2000px;
 }
 .post_container {
     box-shadow: 16px 15px 10px rgba(0,0,0,0.5);
@@ -106,6 +112,7 @@ footer{
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    padding: 5px;
 }
 .post_container h3 {
     font-size: 25px;
