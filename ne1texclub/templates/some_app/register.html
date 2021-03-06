@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
     <title>Register</title>
 </head>
 <body>
@@ -29,10 +29,10 @@
                 <a href="/articles" class="sidebar-buttons">Articles</a>
         </div>
     </div>
-    <main class="auth_page_back">
+    <main class="auth_page">
         <div class="input_form">
             <form class="input_form" method="post" action=".">
-                <h1 id="button" class="link">REGISTER</h1>
+                <h1 class="article-h1">REGISTER</h1>
                 {{ user_form.as_p }} 
                 {% csrf_token %}
                 <input class="login_button" size="10" type="submit" value="REGISTER">

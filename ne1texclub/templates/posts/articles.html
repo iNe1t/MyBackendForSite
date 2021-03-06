@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'for_posts_style.css' %}">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
     <title>Posts</title>
 </head>
 <body>
@@ -21,11 +21,11 @@
                 <a href="" class="sidebar-buttons">Streams</a>
                 <a href="" class="sidebar-buttons">Youtube</a>
                 <a href="" class="sidebar-buttons">Games</a>
-                <a href="http://127.0.0.1:8000/" class="sidebar-buttons">Home</a>
+                <a href="/" class="sidebar-buttons">Home</a>
                 <a href="/articles" class="sidebar-buttons">Articles</a>
         </div>
     </div>
-    <main class="post_page">
+    <main class="artic_page">
         <h1 class="article-h1">Статейки / Проекты</h1>
         <div class="articles_container">
             {% for post in posts %}
@@ -43,7 +43,7 @@
             {% endfor %}
         </div>
     </main>
-    <footer></footer>
+    <div class="slava"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="{% static 'script.js' %}"></script>
     

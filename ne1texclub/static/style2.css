@@ -3,6 +3,7 @@
 body{
     margin: 0px;
 }
+/* Для шапки */
 .for-header {
     background: linear-gradient(#7842f5, #bb6afc);
     height: 70px;
@@ -17,7 +18,6 @@ body{
     flex-grow: 0;
     width: 100%;
     z-index: 1;
-
 }
 .for-header h1 {
     margin-left:25px;
@@ -36,21 +36,34 @@ body{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-aside {
-    background-color: rgba(196, 196, 196, 0.5);
-    width: 20%;
-    height: 1700px;
-    order: -1;
-    margin-right: 25px;
-}
-.footer{
-    background: linear-gradient(#bb6afc,#7842f5);
-    height: 100px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+/* Для шапки */
+
+
+/* Имя сайта */
+.name {
+    background-image: url(download.png);
+    background-repeat: repeat;
     width: 100%;
+    height: 500px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    align-items: center;
+    flex-direction: column;
 }
+.name h1 {
+    font-size: 110px;
+}
+.name p {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+
+/* Боковое меню */
 .sidemenu{
     visibility: hidden;
     background-color: rgba(0,0, 0, 0.4);
@@ -83,13 +96,51 @@ aside {
     background-color: #7842f5;
 }
 
-.post_page {
-    margin-top: 80px;
-    height: 2000px;
+/* Для формочек :D */
+.input_form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+}
+.inputer {
+    font-size: 25px;
+}
+.login {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.login_button {
+    margin: 20px 50px 20px 50px;
+    background: linear-gradient(#bb6afc,#7842f5);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+/* Для статей */
+.artic-header {
+    color: gray;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+.artic-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artic_button {
+    color: white;
+    background: linear-gradient(#bb6afc,#7842f5);
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
 }
 .article-h1, .post_title {
     font-family: 'Open Sans', sans-serif;
@@ -100,8 +151,8 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 2000px;
 }
+/* Карточки постов */
 .post_container {
     box-shadow: 16px 15px 10px rgba(0,0,0,0.5);
     height: 30vh;
@@ -125,13 +176,25 @@ aside {
     width: 12vw;
     padding: 15px;
 }
-.justbutton {
-    color: white;
+.slava {
     background: linear-gradient(#bb6afc,#7842f5);
-    text-align: center;
-    padding: 5px;
-    font-size: 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    height: 25px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.artic_page {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Для аутентификации и логина */
+.auth_page {
+    font-family: 'Open Sans', sans-serif;
 }
