@@ -26,7 +26,12 @@
     </div>
     <main class="post_page">
         <h1 class="post_title">{{post.title}}</h1>
-            {{post.text}}
+        <div class="post_pic">
+            <img src="{{post.img_for_post.url}}" alt="">
+        </div>
+        <div class="post_txt">
+            <pre>{{post.text}}</pre>
+        </div>  
     </main>
     <div class="footer"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

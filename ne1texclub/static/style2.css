@@ -161,8 +161,8 @@ main {
     border: 2px solid gray;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     padding: 5px;
 }
 .post_container h3 {
@@ -170,6 +170,13 @@ main {
 }
 .for_text {
     padding: 25px;
+    
+}
+.for-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .for-pic img {
     height: 12vw;
@@ -192,9 +199,37 @@ main {
     align-items: center;
     font-family: 'Open Sans', sans-serif;
 }
-
-
 /* Для аутентификации и логина */
 .auth_page {
     font-family: 'Open Sans', sans-serif;
 }
+.post_page {
+    margin-top: 80px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post_pic img {
+    width: 25vw;
+    height: 25vw;
+}
+.post_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post_txt {
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post_txt pre{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
