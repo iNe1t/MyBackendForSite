@@ -5,7 +5,7 @@ body{
 }
 /* Для шапки */
 .for-header {
-    background: linear-gradient(#7842f5, #bb6afc);
+    background: #7842f5;
     height: 70px;
     position: fixed;
     top: 0px;
@@ -74,7 +74,7 @@ body{
     position: fixed;
 }
 .sidebar{
-    background: linear-gradient(#bb6afc,#7842f5);
+    background:#7842f5;
     height: 100%;
     width: 25vw;
     visibility: hidden;
@@ -130,7 +130,7 @@ body{
     align-items: center;
 }
 main {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,4 +232,35 @@ main {
     flex-direction: column;
     align-items: center;    
 }
-
+.scroll_change {
+    background: white;
+    border-bottom: 5px solid #7842f5;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    width: 100%;
+    z-index: 1;
+}
+.dark_text {
+    color: black;
+}
+.dark_text:hover {
+    background-color: white;
+}
+.sidescroll_change {
+    background:white;
+    height: 100%;
+    width: 25vw;
+    visibility: hidden;
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+}

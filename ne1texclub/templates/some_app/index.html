@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="{% static 'style2.css' %}">
 </head>
 <body>
-    <header class="for-header">
+    <header class="for-header" id="header">
         <h1 id="button" class="link">N</h1>
         <div>
             {% if user.is_authenticated %}
-                    <a href="#" class="ul-header">{{ user.username }}</a>
+                    <a href="#" id="ul-header" class="ul-header">{{ user.username }}</a>
             {% else %}
-                    <a href="#" class="ul-header"></a>
+                    <a href="#" id="ul-header" class="ul-header"></a>
             {% endif %} 
-            <a href="/log_in" class="ul-header">Log In</a>
-            <a href="/register" class="ul-header">Register</a>  
+            <a href="/log_in" id="ul-header" class="ul-header">Log In</a>
+            <a href="/register" id="ul-header" class="ul-header">Register</a>  
         </div>
     </header>
     <div id="menu" class="sidemenu">
         <div id="menu1" class="sidebar">
-                <a href="" class="sidebar-buttons">Streams</a>
-                <a href="https://www.youtube.com/channel/UCea4Nji9RNJYBuIHd0D_R_Q" class="sidebar-buttons">Youtube</a>
-                <a href="" class="sidebar-buttons">Games</a>
-                <a href="/" class="sidebar-buttons">Home</a>
-                <a href="/articles" class="sidebar-buttons">Articles</a>
+                <a href="" class="sidebar-buttons" id="buttonz">Streams</a>
+                <a href="https://www.youtube.com/channel/UCea4Nji9RNJYBuIHd0D_R_Q" class="sidebar-buttons" id="buttonz">Youtube</a>
+                <a href="" class="sidebar-buttons" id="buttonz">Games</a>
+                <a href="/" class="sidebar-buttons" id="buttonz">Home</a>
+                <a href="/articles" class="sidebar-buttons" id="buttonz">Articles</a>
         </div>
     </div>
     <div class="name">
@@ -36,10 +36,15 @@
         Блог об IT, играх, интересных событиях, проектах и прочем :)
         </p>
     </div>
-    <main>
+    <main id="main_trigger">
+        
     </main>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'plugins/debug.addIndicators.min.js' %}"></script>
+    <script src="{% static 'scroll.js' %}"></script>
+    
 </body>
 </html>
