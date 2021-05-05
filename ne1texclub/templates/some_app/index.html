@@ -37,14 +37,24 @@
         </p>
     </div>
     <main id="main_trigger">
-        
+        <div class="start_block">
+            <div class="welcome_text"></div>
+            <div id="3dmodel" class="3d_model">
+                <canvas width="395" height="601"></canvas>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="{% static 'script.js' %}"></script>
+    <!-- Some ScrollShit) -->
     <script src="{% static 'ScrollMagic.min.js' %}"></script>
     <script src="{% static 'plugins/debug.addIndicators.min.js' %}"></script>
     <script src="{% static 'scroll.js' %}"></script>
+    <!-- 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="{% static '3dmodel.js' %}"></script>
     
 </body>
 </html>
