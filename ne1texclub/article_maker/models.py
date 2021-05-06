@@ -16,7 +16,7 @@ class Post(models.Model):
     title = models.CharField(max_length=50)
     text = models.TextField()
     Short_text = models.TextField(max_length=75, null=True)
-    data = models.DateTimeField(auto_now=True)
+    date = models.DateTimeField(auto_now=True)
     category = models.ForeignKey(Category, on_delete = models.CASCADE)
     img_for_post = models.ImageField(upload_to='images/', null=True, blank=True)
  

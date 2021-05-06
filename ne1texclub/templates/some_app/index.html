@@ -38,10 +38,11 @@
     </div>
     <main id="main_trigger">
         <div class="start_block">
-            <div class="welcome_text"></div>
-            <div id="3dmodel" class="3d_model">
-                <canvas width="395" height="601"></canvas>
+            <div class="welcome_text">
+                <h3>WELCOME</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, ab dolore explicabo repudiandae iusto consequuntur at eius aperiam optio voluptate ratione minima, quasi similique doloremque voluptates, molestias veniam dolorem soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis consequuntur beatae quis facilis qui ea, possimus aperiam pariatur reiciendis dolor? Sint neque eius consectetur ratione eligendi dolorem ipsum eos aut!</p>
             </div>
+            <div id="threedmodel" class="threed_model"></div>
         </div>
     </main>
     <footer></footer>
@@ -52,8 +53,9 @@
     <script src="{% static 'plugins/debug.addIndicators.min.js' %}"></script>
     <script src="{% static 'scroll.js' %}"></script>
     <!-- 3D -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="{% static 'Fox3DModel/three.min.js' %}"></script>
+    <script src="{% static 'Fox3DModel/GLTFLoader.js' %}"></script>
+    <script src="{% static 'Fox3DModel/OrbitControls.js' %}"></script>
     <script src="{% static '3dmodel.js' %}"></script>
     
 </body>

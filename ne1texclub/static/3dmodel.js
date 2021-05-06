@@ -1,33 +1,52 @@
 scene = new THREE.Scene();
-camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+scene.background = new THREE.Color(0xdddddd);
 
-camera.position.z = 10;
+camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
+camera.rotation.y = 45/180*Math.PI;
+camera.position.x = 800;
+camera.position.y = 100;
+camera.position.z = 1000;
 
-renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
+renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setSize(window.innerWidth,window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-renderer.setClearColor(0x00000, 0);
-renderer.setSize(1280, 720);
+hlight = new THREE.AmbientLight (0x404040,100);
+scene.add(hlight);
 
-renderer.domElement.setAttribute("id", "3dmodel");
+directionalLight = new THREE.DirectionalLight(0xffffff,100);
+directionalLight.position.set(0,1,0);
+directionalLight.castShadow = true;
+scene.add(directionalLight);
 
-document.body.insertBefore(renderer.domElement, document.body.firstChild);
+light = new THREE.PointLight(0xc4c4c4,10);
+light.position.set(0,300,500);
+scene.add(light);
 
+light2 = new THREE.PointLight(0xc4c4c4,10);
+light2.position.set(500,100,0);
+scene.add(light2);
 
-const aLight = new THREE.AmbientLight(0x404040, 1.2);
-scene.add(aLight);
+light3 = new THREE.PointLight(0xc4c4c4,10);
+light3.position.set(0,100,-500);
+scene.add(light3);
 
-const pLight = new THREE.PointLight(0xFFFFFF, 1.2);
-pLight.position.set(0, -3, 7);
-scene.add(pLight);
-//Пригодится
-//const helper = new THREE.PointLightHelper(pLight);
-//scene.add(helper);
+light4 = new THREE.PointLight(0xc4c4c4,10);
+light4.position.set(-500,300,500);
+scene.add(light4);
+
 let loader = new THREE.GLTFLoader();
-let obj = null;
-
-loader.load('static/scene.gltf', function(gltf){
-    obj = gltf;
-    obj.scene.scale.set(1.3, 1.3, 1.3);
-
-    scene.add(obj.scene);
+loader.load('/static/Fox3DModel/scene.gltf', function(gltf){
+  car = gltf.scene.children[0];
+  car.scale.set(0.5,0.5,0.5);
+  scene.add(gltf.scene);
+  animate();
 });
+
+let controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.addEventListener('change', renderer);
+
+function animate() {
+    renderer.render(scene,camera);
+    requestAnimationFrame(animate);
+  }
