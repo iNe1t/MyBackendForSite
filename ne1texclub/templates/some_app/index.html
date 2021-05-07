@@ -42,10 +42,13 @@
                 <h3>WELCOME</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, ab dolore explicabo repudiandae iusto consequuntur at eius aperiam optio voluptate ratione minima, quasi similique doloremque voluptates, molestias veniam dolorem soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis consequuntur beatae quis facilis qui ea, possimus aperiam pariatur reiciendis dolor? Sint neque eius consectetur ratione eligendi dolorem ipsum eos aut!</p>
             </div>
-            <div id="threedmodel" class="threed_model"></div>
+            <div id="aSide">
+                <model-viewer src="{% static 'Fox3DModel/scene.gltf' %}" alt="Fox" auto-rotate camera-controls ar ios-src="{% static 'Fox3DModel/scene.gltf' %}" class="model3d"></model-viewer>
+            </div>
         </div>
     </main>
     <footer></footer>
+    <!-- JQuery) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="{% static 'script.js' %}"></script>
     <!-- Some ScrollShit) -->
@@ -53,10 +56,21 @@
     <script src="{% static 'plugins/debug.addIndicators.min.js' %}"></script>
     <script src="{% static 'scroll.js' %}"></script>
     <!-- 3D -->
-    <script src="{% static 'Fox3DModel/three.min.js' %}"></script>
-    <script src="{% static 'Fox3DModel/GLTFLoader.js' %}"></script>
-    <script src="{% static 'Fox3DModel/OrbitControls.js' %}"></script>
-    <script src="{% static '3dmodel.js' %}"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     
 </body>
 </html>

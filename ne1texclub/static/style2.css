@@ -44,7 +44,7 @@ body{
     background-image: url(download.png);
     background-repeat: repeat;
     width: 100%;
-    height: 500px;
+    height: 650px;
     margin-top: 65px;
     display: flex;
     justify-content: center;
@@ -54,7 +54,8 @@ body{
     flex-direction: column;
 }
 .name h1 {
-    font-size: 110px;
+    font-size: 120px;
+    margin: 40px;
 }
 .name p {
     text-align: center;
@@ -267,24 +268,31 @@ main {
 .welcome_text {
     font-family: 'Open Sans', sans-serif;
     color: black;
-    height: 10vh;
-    width: 45vw;
-}
-.threed_model {
-    height: 25vw;
-    width: 45vw;
-    border: 1px solid black;
-    /* background-color: black; */
-    z-index: 999;
+    width: 50%;
+    height: 100%;
 }
 .start_block {
     display: flex;
     flex-direction: row;
-    padding: 40px;
-    height: 20vh;
+    
+    height: 60vh;
+    width: 95vw;
 }
 .welcome_text h3{
     font-size: 50px;
-    padding: 1px;
-    margin: 1px;
+    margin-bottom: 10px;
 }
+#aSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+
