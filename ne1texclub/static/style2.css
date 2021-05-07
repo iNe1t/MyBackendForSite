@@ -3,6 +3,19 @@
 body{
     margin: 0px;
 }
+@keyframes perehod{
+    from {background: linear-gradient(90deg, #7842f5 100%, white 0%);}
+    10% {background: linear-gradient(90deg, #7842f5 90%, white 10%);}
+    20% {background: linear-gradient(90deg, #7842f5 80%, white 20%);}
+    30% {background: linear-gradient(90deg, #7842f5 70%, white 30%);}
+    40% {background: linear-gradient(90deg, #7842f5 60%, white 40%);}
+    50% {background: linear-gradient(90deg, #7842f5 50%, white 50%);}
+    60% {background: linear-gradient(90deg, #7842f5 40%, white 60%);}
+    70% {background: linear-gradient(90deg, #7842f5 30%, white 70%);}
+    80% {background: linear-gradient(90deg, #7842f5 20%, white 80%);}
+    90% {background: linear-gradient(90deg, #7842f5 10%, white 90%);}
+    to {background: linear-gradient(90deg, #7842f5 0%, white 100%);}
+    }
 /* Для шапки */
 .for-header {
     background: #7842f5;
@@ -61,8 +74,19 @@ body{
     text-align: center;
     margin-bottom: 100px;
 }
-
-
+@keyframes perehod{
+    from {background: linear-gradient(90deg, #7842f5 100%, white 0%);}
+    10% {background: linear-gradient(90deg, #7842f5 90%, white 10%);}
+    20% {background: linear-gradient(90deg, #7842f5 80%, white 20%);}
+    30% {background: linear-gradient(90deg, #7842f5 70%, white 30%);}
+    40% {background: linear-gradient(90deg, #7842f5 60%, white 40%);}
+    50% {background: linear-gradient(90deg, #7842f5 50%, white 50%);}
+    60% {background: linear-gradient(90deg, #7842f5 40%, white 60%);}
+    70% {background: linear-gradient(90deg, #7842f5 30%, white 70%);}
+    80% {background: linear-gradient(90deg, #7842f5 20%, white 80%);}
+    90% {background: linear-gradient(90deg, #7842f5 10%, white 90%);}
+    to {background: linear-gradient(90deg, #7842f5 0%, white 100%);}
+    }
 
 /* Боковое меню */
 .sidemenu{
@@ -293,6 +317,9 @@ main {
 model-viewer {
     width: 100%;
     height: 100%;
+}
+.animation_class {
+    animation :perehod 5s 1 ease-in-out;
 }
 
 
