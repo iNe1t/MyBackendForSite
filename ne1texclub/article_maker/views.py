@@ -14,8 +14,8 @@ def post_page(request, post_id):
     }
     return render(request, "posts/post.html", context)
 
-def about(request):
+def last_post(request):
         # get the blog posts that are published
-        posts = Post.objects.filter(published=True).order_by('-date')[0:3]
+        last_post = Post.objects.filter(published=True).order_by('-date')[0:1]
         # now return the rendered template
-        return render(request, 'some_app/index.html', {'post': posts})
+        return {'last_post': last_post}

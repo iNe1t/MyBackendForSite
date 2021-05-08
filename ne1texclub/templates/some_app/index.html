@@ -46,6 +46,28 @@
                 <model-viewer src="{% static 'Fox3DModel/scene.gltf' %}" alt="Fox" auto-rotate camera-controls ar ios-src="{% static 'Fox3DModel/scene.gltf' %}" class="model3d"></model-viewer>
             </div>
         </div>
+        <div class="languages"></div>
+        <div class="last_article_and_video">
+            <div class="article">
+                <h3>THE LAST POST</h3>
+                {% for post in last_post %}
+                    <article class="main_post_container">
+                        <div class="main_for-pic">
+                            <img src="{{post.img_for_post.url}}" alt="">
+                        </div>
+                        <div class="main_for_text">
+                            <h3>{{ post.title }}</h3>
+                            <p>{{ post.Short_text }}</p>
+                            <a href="/post/{{post.id}}" class="main_justbutton">Читать</a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div class="video">
+                <h3>THE LAST VIDEO</h3>
+                <iframe id="youtube_video" width="600" height="500" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <!-- JQuery) -->
@@ -58,6 +80,9 @@
     <!-- 3D -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- YouTube -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{% static 'youtube.js'%}"></script>
     
     
 </body>

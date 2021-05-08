@@ -19,6 +19,7 @@ class Post(models.Model):
     date = models.DateTimeField(auto_now=True)
     category = models.ForeignKey(Category, on_delete = models.CASCADE)
     img_for_post = models.ImageField(upload_to='images/', null=True, blank=True)
+    published = models.BooleanField(default=True)
  
     def __str__(self):
         return self.title
