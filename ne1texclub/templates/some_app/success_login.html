@@ -25,8 +25,8 @@
         </div>
     </div>
     <main class="reg_success">
-        <h1>Welcome! {% if user.is_authenticated %}
-                {{ user.username }}
+        <h1 class="new_welcome_text">Welcome, {% if user.is_authenticated %}
+                {{ user.username }}!
             {% else %}
                 <p>    </p>
             {% endif %} </h1>

@@ -74,20 +74,6 @@ body{
     text-align: center;
     margin-bottom: 100px;
 }
-@keyframes perehod{
-    from {background: linear-gradient(90deg, #7842f5 100%, white 0%);}
-    10% {background: linear-gradient(90deg, #7842f5 90%, white 10%);}
-    20% {background: linear-gradient(90deg, #7842f5 80%, white 20%);}
-    30% {background: linear-gradient(90deg, #7842f5 70%, white 30%);}
-    40% {background: linear-gradient(90deg, #7842f5 60%, white 40%);}
-    50% {background: linear-gradient(90deg, #7842f5 50%, white 50%);}
-    60% {background: linear-gradient(90deg, #7842f5 40%, white 60%);}
-    70% {background: linear-gradient(90deg, #7842f5 30%, white 70%);}
-    80% {background: linear-gradient(90deg, #7842f5 20%, white 80%);}
-    90% {background: linear-gradient(90deg, #7842f5 10%, white 90%);}
-    to {background: linear-gradient(90deg, #7842f5 0%, white 100%);}
-    }
-
 /* Боковое меню */
 .sidemenu{
     visibility: hidden;
@@ -128,6 +114,9 @@ body{
     text-align: center;
     margin-top: 60px;
 }
+.input_form span{
+    display: none;
+}
 .inputer {
     font-size: 25px;
 }
@@ -164,8 +153,11 @@ main {
     color: white;
     background: linear-gradient(#bb6afc,#7842f5);
     text-align: center;
+    text-decoration: none;
     padding: 5px;
     font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
 }
 .article-h1, .post_title {
     font-family: 'Open Sans', sans-serif;
@@ -377,5 +369,18 @@ model-viewer {
     width: 12vw;
     padding: 15px;
 }
+.new_welcome_text {
+    font-size: 75px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+}
+.reg_success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
 
 
