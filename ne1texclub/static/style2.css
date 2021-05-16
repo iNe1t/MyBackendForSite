@@ -3,19 +3,6 @@
 body{
     margin: 0px;
 }
-@keyframes perehod{
-    from {background: linear-gradient(90deg, #7842f5 100%, white 0%);}
-    10% {background: linear-gradient(90deg, #7842f5 90%, white 10%);}
-    20% {background: linear-gradient(90deg, #7842f5 80%, white 20%);}
-    30% {background: linear-gradient(90deg, #7842f5 70%, white 30%);}
-    40% {background: linear-gradient(90deg, #7842f5 60%, white 40%);}
-    50% {background: linear-gradient(90deg, #7842f5 50%, white 50%);}
-    60% {background: linear-gradient(90deg, #7842f5 40%, white 60%);}
-    70% {background: linear-gradient(90deg, #7842f5 30%, white 70%);}
-    80% {background: linear-gradient(90deg, #7842f5 20%, white 80%);}
-    90% {background: linear-gradient(90deg, #7842f5 10%, white 90%);}
-    to {background: linear-gradient(90deg, #7842f5 0%, white 100%);}
-    }
 /* Для шапки */
 .for-header {
     background: #7842f5;
@@ -75,17 +62,27 @@ body{
     margin-bottom: 100px;
 }
 @keyframes perehod{
-    from {background: linear-gradient(90deg, #7842f5 100%, white 0%);}
-    10% {background: linear-gradient(90deg, #7842f5 90%, white 10%);}
-    20% {background: linear-gradient(90deg, #7842f5 80%, white 20%);}
-    30% {background: linear-gradient(90deg, #7842f5 70%, white 30%);}
-    40% {background: linear-gradient(90deg, #7842f5 60%, white 40%);}
-    50% {background: linear-gradient(90deg, #7842f5 50%, white 50%);}
-    60% {background: linear-gradient(90deg, #7842f5 40%, white 60%);}
-    70% {background: linear-gradient(90deg, #7842f5 30%, white 70%);}
-    80% {background: linear-gradient(90deg, #7842f5 20%, white 80%);}
-    90% {background: linear-gradient(90deg, #7842f5 10%, white 90%);}
-    to {background: linear-gradient(90deg, #7842f5 0%, white 100%);}
+    0% {background: linear-gradient(to right, #7842f5 100%, white 0%);}
+    5% {background: linear-gradient(to right, #7842f5 95%, white 5%);}
+    10% {background: linear-gradient(to right, #7842f5 90%, white 10%);}
+    15% {background: linear-gradient(to right, #7842f5 85%, white 15%);}
+    20% {background: linear-gradient(to right, #7842f5 80%, white 20%);}
+    25% {background: linear-gradient(to right, #7842f5 75%, white 25%);}
+    30% {background: linear-gradient(to right, #7842f5 70%, white 30%);}
+    35% {background: linear-gradient(to right, #7842f5 65%, white 35%);}
+    40% {background: linear-gradient(to right, #7842f5 60%, white 40%);}
+    45% {background: linear-gradient(to right, #7842f5 55%, white 45%);}
+    50% {background: linear-gradient(to right, #7842f5 50%, white 50%);}
+    55% {background: linear-gradient(to right, #7842f5 45%, white 55%);}
+    60% {background: linear-gradient(to right, #7842f5 40%, white 60%);}
+    65% {background: linear-gradient(to right, #7842f5 35%, white 65%);}
+    70% {background: linear-gradient(to right, #7842f5 30%, white 70%);}
+    75% {background: linear-gradient(to right, #7842f5 25%, white 75%);}
+    80% {background: linear-gradient(to right, #7842f5 20%, white 80%);}
+    85% {background: linear-gradient(to right, #7842f5 15%, white 85%);}
+    90% {background: linear-gradient(to right, #7842f5 10%, white 90%);}
+    95% {background: linear-gradient(to right, #7842f5 5%, white 95%);}
+    100% {background: linear-gradient(to right, #7842f5 0%, white 100%);}
     }
 
 /* Боковое меню */
