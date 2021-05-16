@@ -61,7 +61,6 @@ body{
     text-align: center;
     margin-bottom: 100px;
 }
-<<<<<<< HEAD
 @keyframes perehod{
     0% {background: linear-gradient(to right, #7842f5 100%, white 0%);}
     5% {background: linear-gradient(to right, #7842f5 95%, white 5%);}
@@ -86,8 +85,6 @@ body{
     100% {background: linear-gradient(to right, #7842f5 0%, white 100%);}
     }
 
-=======
->>>>>>> a64f770304917d137b586e991a24a6baa67c6a84
 /* Боковое меню */
 .sidemenu{
     visibility: hidden;
