@@ -61,6 +61,7 @@ body{
     text-align: center;
     margin-bottom: 100px;
 }
+<<<<<<< HEAD
 @keyframes perehod{
     0% {background: linear-gradient(to right, #7842f5 100%, white 0%);}
     5% {background: linear-gradient(to right, #7842f5 95%, white 5%);}
@@ -85,6 +86,8 @@ body{
     100% {background: linear-gradient(to right, #7842f5 0%, white 100%);}
     }
 
+=======
+>>>>>>> a64f770304917d137b586e991a24a6baa67c6a84
 /* Боковое меню */
 .sidemenu{
     visibility: hidden;
@@ -125,6 +128,9 @@ body{
     text-align: center;
     margin-top: 60px;
 }
+.input_form span{
+    display: none;
+}
 .inputer {
     font-size: 25px;
 }
@@ -161,8 +167,11 @@ main {
     color: white;
     background: linear-gradient(#bb6afc,#7842f5);
     text-align: center;
+    text-decoration: none;
     padding: 5px;
     font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
 }
 .article-h1, .post_title {
     font-family: 'Open Sans', sans-serif;
@@ -374,5 +383,18 @@ model-viewer {
     width: 12vw;
     padding: 15px;
 }
+.new_welcome_text {
+    font-size: 75px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+}
+.reg_success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
 
 
