@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'article_maker',
     'authen',
     'registration',
-    'ckeditor',
-    'ckeditor_uploader',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -135,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media/') 
 
-# LOGIN_URL = 'http://localhost:8000/log_in/'
-
-CKEDITOR_BASEPATH = "/staticfiles/ckeditor/ckeditor/"
-
+TINYMCE_DEFAULT_CONFIG = {
+    "plugins": "image,code", #plugins
+     
+}

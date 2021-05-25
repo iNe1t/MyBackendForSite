@@ -1,5 +1,11 @@
 from django.shortcuts import render
 from article_maker.models import Post
+from django.views.generic import DetailView
+
+class post(DetailView):
+    model = Post
+    template_name  = 'post.html'
+    slug_field = 'pk'
 
 def article_maker(request):
     context = {

@@ -1,12 +1,8 @@
 var controller = new ScrollMagic.Controller();
 
-// new ScrollMagic.Scene({triggerElement: "#main_trigger"})
-// 							// trigger animation by adding a css class
-// 							.setClassToggle("#header", "scroll_change")
-// 							.addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#main_trigger"})
 							// trigger animation by adding a css class
-                            .setClassToggle("#header", "animation_class")
+							.setClassToggle("#header", "scroll_change")
 							.addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#main_trigger"})
 							// trigger animation by adding a css class
