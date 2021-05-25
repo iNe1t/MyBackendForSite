@@ -135,6 +135,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media/') 
 
 TINYMCE_DEFAULT_CONFIG = {
-    "plugins": "image,code", #plugins
+    "plugins": "image,code,codesample,link,media,anchor", #plugins
      
 }
