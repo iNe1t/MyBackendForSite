@@ -26,6 +26,7 @@ urlpatterns = [
     path('articles/', include('article_maker.urls')),
     path('log_in/', include('authen.urls')),
     path('register/', include('registration.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
     path('post/<int:post_id>', views.post_page),
 ]
 if settings.DEBUG:
