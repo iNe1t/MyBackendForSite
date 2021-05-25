@@ -28,4 +28,5 @@ urlpatterns = [
     path('register/', include('registration.urls')),
     path('post/<int:post_id>', views.post_page),
 ]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
